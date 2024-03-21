@@ -1,20 +1,3 @@
-<?php
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST' )
-{
-    $nama = $_POST['nama'];
-    $nilai = $_POST['nilai'];
-
-    include 'mahasiswa.php';
-
-    $mahasiswa = new Mahasiswa($nama, $nilai);
-    $hasilLulus = $mahasiswa->hasilLulus();
-    $predikat = $mahasiswa->predikat();
-}
-
-?>
-
-
 <!doctype html>
 <html lang="en">
   <head>
